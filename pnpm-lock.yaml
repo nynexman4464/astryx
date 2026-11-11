@@ -1207,6 +1207,19 @@ importers:
         specifier: 0.7.14
         version: link:../../cli
 
+  packages/themes/windows98:
+    dependencies:
+      react:
+        specifier: '>=19'
+        version: 19.3.1
+    devDependencies:
+      '@astryxdesign/cli':
+        specifier: 0.7.14
+        version: link:../../cli
+      '@astryxdesign/core':
+        specifier: workspace:*
+        version: link:../../core
+
   packages/themes/y2k:
     dependencies:
       '@astryxdesign/core':
