@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8"><title>native popover focus restore probe</title></head><body>
+<div id="area"></div>
+<script>
+window.runCase = async function (c) {
+  const area = document.getElementById('area');
+  area.innerHTML = '';
+  const opener = document.createElement('button'); opener.id = 'opener'; opener.textContent = 'opener';
+  const other = document.createElement('button'); other.id = 'other'; other.textContent = 'other';
+  const pop = document.createElement(c.dialog ? 'dialog' : 'div');
+  if (!c.dialog) pop.setAttribute('popover', c.manual ? 'manual' : 'auto');
+  pop.id = 'pop';
+  const inner = document.createElement('button'); inner.id = 'inner'; inner.textContent = 'inner';
+  pop.append(inner);
+  if (c.invoker) { opener.setAttribute('popovertarget', 'pop'); }
+  area.append(opener, other, pop);
+  opener.focus();
+  if (c.dialog) pop.showModal();
+  else if (c.invoker) opener.click();
+  else if (c.source) pop.showPopover({source: opener});
+  else pop.showPopover();
+  inner.focus();
+  const before = document.activeElement?.id;
+  if (c.removeOpener) opener.remove();
+  if (c.moveAtBeforeToggle) pop.addEventListener('beforetoggle', e => { if (e.newState === 'closed') other.focus(); });
+  if (c.dialog && c.moveAtBeforeToggle) { /* dialogs: move before close() */ other.focus(); }
+  return {before};
+};
+window.closeVia = async function (how) {
+  const pop = document.getElementById('pop');
+  if (how === 'hide') { pop.tagName === 'DIALOG' ? pop.close() : pop.hidePopover(); }
+  if (how === 'remove') { pop.remove(); }
+  await new Promise(r => setTimeout(r, 50));
+  const a = document.activeElement;
+  const id = a === document.body ? 'BODY' : (a?.id || a?.tagName || 'null');
+  return id + (a && a !== document.body && a.matches(':focus-visible') ? ' (ring)' : ' (no ring)');
+};
+</script></body></html>
