@@ -1,3 +1,3 @@
-// Copyright (c) Meta Platforms, Inc. and affiliates.
+// Copyright (c) 2026 Alex Rock
 
 export {};

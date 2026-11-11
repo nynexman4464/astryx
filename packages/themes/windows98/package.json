@@ -4,16 +4,16 @@
   "displayName": "Windows 98 Theme",
   "private": false,
   "description": "Windows 98-inspired theme with Windows Standard and Slate color schemes.",
-  "author": "Meta Open Source",
+  "author": "Alex Rock",
   "license": "MIT",
-  "homepage": "https://github.com/meta/astryx#readme",
+  "homepage": "https://github.com/nynexman4464/astryx/tree/theme/windows98/packages/themes/windows98#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/meta/astryx.git",
+    "url": "git+https://github.com/nynexman4464/astryx.git",
     "directory": "packages/themes/windows98"
   },
   "bugs": {
-    "url": "https://github.com/meta/astryx/issues"
+    "url": "https://github.com/nynexman4464/astryx/issues"
   },
   "keywords": [
     "astryx",
@@ -53,6 +53,7 @@
     "dist",
     "src",
     "theme.css.d.ts",
+    "LICENSE",
     "!**/*.test.*",
     "!**/*.spec.js",
     "!**/*.spec.jsx",

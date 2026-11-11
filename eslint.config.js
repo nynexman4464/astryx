@@ -327,6 +327,18 @@ export default defineConfig(
       '@astryx/copyright-header': 'error',
     },
   },
+  // The Windows 98 theme is a third-party theme, copyright its author, so it
+  // carries its own copyright header rather than Meta's. The CLI bundle holds
+  // byte-for-byte copies of its sources.
+  {
+    files: [
+      'packages/themes/windows98/**/*.{ts,tsx}',
+      'packages/cli/assets/templates/themes/windows98/**/*.{ts,tsx}',
+    ],
+    rules: {
+      '@astryx/copyright-header': 'off',
+    },
+  },
   // Table rows must sit inside a table section. `<table>` cannot contain a
   // `<tr>` directly: the HTML parser inserts an implied `<tbody>` when it
   // parses server-rendered markup and React does not when it renders on the
