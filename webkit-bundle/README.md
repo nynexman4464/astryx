@@ -8,6 +8,7 @@ npx playwright install webkit                # browser into the per-user Playwri
 node serve.mjs &                             # http://localhost:5199
 URL=http://localhost:5199/app/ OUT=$PWD/shots node drive.mjs
 node nativeprobe.mjs http://localhost:5199/native/index.html
+node focus-drive.mjs                         # layer focus return (AST-113 FR17–FR21)
 kill %1
 ```
 
@@ -39,3 +40,14 @@ Both engines gave identical results:
 | Case | Chromium, Firefox | WebKit |
 | --- | --- | --- |
 | auto, pointer click inside, then `hidePopover()` | opener, with ring | body (WebKit does not focus a button on click, so the click blurs focus and there is nothing to restore) |
+
+## Layer focus return (`focus-drive.mjs`, Chromium 149 and Firefox 151)
+
+All 7 checks pass in both engines:
+
+- a tour step opened by code returns focus to its anchor's control on Escape;
+- a trigger that remounted while open gets focus back, with a ring after keyboard;
+- focus moved outside before close stays where it is;
+- a menu row that opens a dialog returns focus to the menu trigger on close, with a ring after keyboard and none after a mouse close;
+- a mouse pick returns focus to the menu trigger with no ring;
+- with every stand-in gone, focus goes to `main`, never the body.
