@@ -330,6 +330,20 @@ export const windows98Theme = defineTheme({
         color: shadow,
       },
     },
+    // The composer's typing surface is transparent by default, so it inherits
+    // the grey card behind it. In Win9x anything you type into is a recessed
+    // white edit control — the surrounding composer chrome stays on the face.
+    'chat-composer-input': {
+      base: {
+        borderRadius: '0px',
+        borderStyle: 'none',
+        backgroundColor: window,
+        color: windowText,
+        boxShadow: sunken,
+        // Keep the caret and text clear of the 2px bevel.
+        padding: '3px 4px',
+      },
+    },
     // Same recessed edit field as text-input; without this the control falls
     // back to the un-themed default and renders on the grey face.
     'number-input': {
@@ -385,16 +399,43 @@ export const windows98Theme = defineTheme({
     'selector-popup': {
       base: {
         borderRadius: '0px',
-        borderStyle: 'none',
-        backgroundColor: face,
-        color: text,
-        boxShadow: raised,
+        // A combo box drops a *list box*, not a menu: white field background
+        // behind a flat 1px border. Menus get the face colour and a bevel;
+        // lists do not.
+        //
+        // The popup element also carries .astryx-popover, which this theme
+        // paints with the face colour. Both are single-class selectors, so
+        // without the :is() bump the winner would depend on which block comes
+        // later in this file.
+        ':is(.astryx-popover)': {
+          borderWidth: '1px',
+          borderStyle: 'solid',
+          borderColor: darkShadow,
+          backgroundColor: window,
+          color: windowText,
+          boxShadow: 'none',
+        },
       },
     },
     'selector-option-row': {
+      base: {
+        borderRadius: '0px',
+        // The highlight tracks the pointer in a Win9x drop-down list, so
+        // hover and selection share one treatment. The row's own `color` does
+        // not reach the label — an inner span paints itself from the text
+        // tokens — so those are redefined here and inherited downward.
+        ':hover': {
+          backgroundColor: selection,
+          color: selectionText,
+          '--color-text-primary': selectionText,
+          '--color-text-secondary': selectionText,
+        },
+      },
       selected: {
         backgroundColor: selection,
         color: selectionText,
+        '--color-text-primary': selectionText,
+        '--color-text-secondary': selectionText,
       },
     },
 
@@ -575,6 +616,31 @@ export const windows98Theme = defineTheme({
         width: '10px',
         height: '10px',
         fontSize: '10px',
+      },
+    },
+
+    // A menu highlights the row under the pointer; a plain list of Items does
+    // not. Item carries no attribute distinguishing the two and theme targets
+    // cannot use a descendant combinator, so the menu publishes the highlight
+    // downward and Item reads it, defaulting to no highlight outside a menu.
+    'more-menu': {
+      base: {
+        '--_w98-menu-highlight': selection,
+        '--_w98-menu-highlight-text': selectionText,
+      },
+    },
+    item: {
+      base: {
+        borderRadius: '0px',
+        ':hover': {
+          backgroundColor: 'var(--_w98-menu-highlight, transparent)',
+          // Item paints its label and description from these rather than from
+          // `color`, so recolouring the row means setting both.
+          '--_item-label-color':
+            'var(--_w98-menu-highlight-text, var(--color-text-primary))',
+          '--_item-description-color':
+            'var(--_w98-menu-highlight-text, var(--color-text-secondary))',
+        },
       },
     },
 
