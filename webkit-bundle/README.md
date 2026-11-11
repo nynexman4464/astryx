@@ -9,6 +9,7 @@ node serve.mjs &                             # http://localhost:5199
 URL=http://localhost:5199/app/ OUT=$PWD/shots node drive.mjs
 node nativeprobe.mjs http://localhost:5199/native/index.html
 node focus-drive.mjs                         # layer focus return (AST-113 FR17–FR21)
+node modal-drive.mjs                         # isModal (AST-113 FR12–FR15)
 kill %1
 ```
 
@@ -51,3 +52,15 @@ All 7 checks pass in both engines:
 - a menu row that opens a dialog returns focus to the menu trigger on close, with a ring after keyboard and none after a mouse close;
 - a mouse pick returns focus to the menu trigger with no ring;
 - with every stand-in gone, focus goes to `main`, never the body.
+
+## isModal (`modal-drive.mjs`, Chromium 149 and Firefox 151)
+
+All 7 checks pass in both engines:
+
+- a non-modal coachmark opens with focus inside;
+- Tab moves past its last control into the page and never wraps;
+- Tab from the highlighted control is not trapped;
+- an Escape pressed elsewhere leaves it open, and an Escape on the anchor closes it;
+- a modal popover still holds Tab and carries `aria-modal`.
+
+The engines differ in one place. After the coachmark's last control, Chromium moves to the anchor; Firefox moves to the next control in DOM order.
