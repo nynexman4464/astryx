@@ -328,13 +328,9 @@ export default defineConfig(
     },
   },
   // The Windows 98 theme is a third-party theme, copyright its author, so it
-  // carries its own copyright header rather than Meta's. The CLI bundle holds
-  // byte-for-byte copies of its sources.
+  // carries its own copyright header rather than Meta's.
   {
-    files: [
-      'packages/themes/windows98/**/*.{ts,tsx}',
-      'packages/cli/assets/templates/themes/windows98/**/*.{ts,tsx}',
-    ],
+    files: ['packages/themes/windows98/**/*.{ts,tsx}'],
     rules: {
       '@astryx/copyright-header': 'off',
     },

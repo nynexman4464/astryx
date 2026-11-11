@@ -2,7 +2,10 @@
   "name": "@astryxdesign/theme-windows98",
   "version": "0.7.14",
   "displayName": "Windows 98 Theme",
-  "private": false,
+  "private": true,
+  "astryx": {
+    "canaryOnly": true
+  },
   "description": "Windows 98-inspired theme with Windows Standard and Rainy Day color schemes.",
   "author": "Alex Rock",
   "license": "MIT",
@@ -69,7 +72,6 @@
     "!**/*.bench.*"
   ],
   "scripts": {
-    "api:report": "node ../../../scripts/api-report/cli.mjs --package .",
     "build": "node ../../../scripts/clean-dist.mjs && astryx theme build src/windows98Theme.ts -o dist/theme.css --icons-specifier ./icons.mjs && tsup && tsc --project tsconfig.build.json && node ../../../scripts/add-declaration-extensions.mjs && node ../../../scripts/emit-commonjs-declarations.mjs dist/source.d.ts && node ../../../scripts/check-fully-specified.mjs"
   },
   "peerDependencies": {

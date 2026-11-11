@@ -409,14 +409,14 @@
     },
     {
       "package": "@astryxdesign/theme-windows98",
-      "description": "Windows 98-inspired theme with Windows Standard and Slate color schemes.",
-      "releasedWithCore": true,
+      "description": "Windows 98-inspired theme with Windows Standard and Rainy Day color schemes.",
+      "canaryOnly": true,
       "contributions": [
         {
           "kind": "theme",
           "name": "windows98",
           "title": "Windows 98",
-          "summary": "Windows 98-inspired theme with Windows Standard and Slate color schemes."
+          "summary": "Windows 98-inspired theme with Windows Standard and Rainy Day color schemes."
         }
       ]
     },
