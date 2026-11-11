@@ -111,6 +111,7 @@ describe('theme explorer model', () => {
       '@astryxdesign/theme-gothic',
       '@astryxdesign/theme-matcha',
       '@astryxdesign/theme-y2k',
+      '@astryxdesign/theme-windows98',
       '@astryxdesign/theme-butter',
     ];
     const names = themePackages.map(p => p.name);

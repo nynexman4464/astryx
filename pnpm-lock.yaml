@@ -215,6 +215,9 @@ importers:
       '@astryxdesign/theme-stone':
         specifier: '*'
         version: link:../../packages/themes/stone
+      '@astryxdesign/theme-windows98':
+        specifier: '*'
+        version: link:../../packages/themes/windows98
       '@astryxdesign/theme-y2k':
         specifier: '*'
         version: link:../../packages/themes/y2k

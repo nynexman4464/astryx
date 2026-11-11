@@ -23,6 +23,7 @@ const THEME_ORDER: ReadonlyArray<string> = [
   '@astryxdesign/theme-gothic',
   '@astryxdesign/theme-matcha',
   '@astryxdesign/theme-y2k',
+  '@astryxdesign/theme-windows98',
   '@astryxdesign/theme-butter',
 ];
 
