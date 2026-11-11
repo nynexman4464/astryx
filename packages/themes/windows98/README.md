@@ -12,14 +12,14 @@ npm install @astryxdesign/theme-windows98
 
 ## Usage
 
-Wrap your app with `XDSTheme` and pass the theme:
+Wrap your app with `Theme` and pass the theme:
 
 ```tsx
-import {XDSTheme} from '@astryxdesign/core/theme';
+import {Theme} from '@astryxdesign/core/theme';
 import {windows98Theme} from '@astryxdesign/theme-windows98/built';
 
 function App() {
-  return <XDSTheme theme={windows98Theme}>{/* your app */}</XDSTheme>;
+  return <Theme theme={windows98Theme}>{/* your app */}</Theme>;
 }
 ```
 

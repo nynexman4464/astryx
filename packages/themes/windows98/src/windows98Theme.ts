@@ -16,6 +16,7 @@ import {
   defineSyntaxTheme,
   type TokenValue,
 } from '@astryxdesign/core/theme';
+import {windows98IconRegistry} from './icons';
 
 const win98Syntax = defineSyntaxTheme({
   name: 'astryx-windows98',
@@ -58,7 +59,8 @@ const localTokens: Record<string, TokenValue> = {
   '--astryx-theme-windows98-inactive-title': ['#808080', '#808080'],
   '--astryx-theme-windows98-inactive-title-end': ['#B5B5B5', '#808080'],
   '--astryx-theme-windows98-inactive-title-text': ['#C0C0C0', '#C0C0C0'],
-  '--astryx-theme-windows98-tooltip': ['#FFFFE1', '#FFFFE1'],
+  // Slate's InfoWindow is white, not the pale yellow Windows Standard uses.
+  '--astryx-theme-windows98-tooltip': ['#FFFFE1', '#FFFFFF'],
   '--astryx-theme-windows98-tooltip-text': ['#000000', '#000000'],
 };
 
@@ -129,9 +131,26 @@ const pressed =
   `inset 2px 2px 0 ${darkShadow}, ` +
   `inset -2px -2px 0 ${light}`;
 
+// Disabled text is engraved, not faded: DrawState(DSS_DISABLED) paints the
+// label once in 3DHILIGHT offset 1px down-right, then again in 3DSHADOW on
+// top. Sampled from native captures of a disabled button and menu item, in
+// both schemes. Astryx dims disabled controls with opacity instead, so each
+// rule that applies this also restores full opacity.
+const embossed = `1px 1px 0 ${highlight}`;
+const disabledText = {
+  opacity: '1',
+  color: shadow,
+  '--color-text-primary': shadow,
+  '--color-text-secondary': shadow,
+  '--color-icon-primary': shadow,
+  textShadow: embossed,
+};
+const isDisabled = ':is(:disabled,[aria-disabled="true"])';
+
 export const windows98Theme = defineTheme({
   name: 'windows98',
   localTokens,
+  icons: windows98IconRegistry,
 
   typography: {
     scale: {base: 12, ratio: 1.125},
@@ -187,14 +206,18 @@ export const windows98Theme = defineTheme({
     '--color-text-primary': 'var(--astryx-theme-windows98-text)',
     '--color-text-secondary': 'var(--astryx-theme-windows98-text)',
     '--color-text-disabled': 'var(--astryx-theme-windows98-shadow)',
-    '--color-text-accent': 'var(--astryx-theme-windows98-selection)',
+    // Accent text and icons follow --color-accent, which media surfaces
+    // (text over photos) re-declare to the on-dark or on-light colour.
+    '--color-text-accent': 'var(--color-accent)',
 
     '--color-icon-primary': 'var(--astryx-theme-windows98-text)',
     '--color-icon-secondary': 'var(--astryx-theme-windows98-text)',
     '--color-icon-disabled': 'var(--astryx-theme-windows98-shadow)',
-    '--color-icon-accent': 'var(--astryx-theme-windows98-selection)',
+    '--color-icon-accent': 'var(--color-accent)',
 
     '--color-accent': 'var(--astryx-theme-windows98-selection)',
+    '--color-on-dark': '#FFFFFF',
+    '--color-on-light': '#000000',
     '--color-on-accent': 'var(--astryx-theme-windows98-selection-text)',
     '--color-accent-muted': 'var(--astryx-theme-windows98-face)',
     '--color-neutral': 'var(--astryx-theme-windows98-face)',
@@ -234,9 +257,9 @@ export const windows98Theme = defineTheme({
     '--shadow-inset-warning': sunken,
     '--shadow-inset-error': sunken,
 
-    '--text-supporting-size': '11px',
+    '--text-supporting-size': '0.6875rem',
     // Win9x field captions sit a step below body text.
-    '--text-label-size': '11px',
+    '--text-label-size': '0.6875rem',
   },
 
   components: {
@@ -256,6 +279,11 @@ export const windows98Theme = defineTheme({
           boxShadow: pressed,
           transform: 'translate(1px, 1px)',
         },
+        // A disabled push button keeps its full bevel; only the label changes.
+        // That rule lives in each variant below: here it would tie on
+        // specificity with the variants' own colour and lose. Icons are SVG,
+        // which text-shadow does not reach.
+        [`${isDisabled} .astryx-icon`]: {filter: `drop-shadow(${embossed})`},
       },
       'variant:primary': {
         backgroundColor: face,
@@ -266,10 +294,12 @@ export const windows98Theme = defineTheme({
         borderStyle: 'solid',
         borderColor: darkShadow,
         boxShadow: raisedButton,
+        [isDisabled]: disabledText,
       },
       'variant:secondary': {
         backgroundColor: face,
         color: text,
+        [isDisabled]: disabledText,
       },
       'variant:ghost': {
         backgroundColor: face,
@@ -283,40 +313,68 @@ export const windows98Theme = defineTheme({
         ':has(.astryx-dialog-header-close-icon)': {
           boxShadow: raisedButton,
         },
+        [isDisabled]: disabledText,
       },
       'variant:destructive': {
         backgroundColor: face,
         color: text,
         borderColor: face,
         boxShadow: raisedButton,
+        [isDisabled]: disabledText,
       },
     },
 
     card: {
       base: {
         backgroundColor: face,
-        // Outer panels are raised, panels nested inside one are recessed.
-        // Astryx reflects no nesting signal into the DOM and theme targets
-        // cannot use a descendant combinator, so this resolves it through the
-        // cascade instead: a card reads its edge from an inherited custom
-        // property, falling back to raised when no ancestor card has set one.
-        boxShadow: `var(--_w98-card-edge, ${raised})`,
+        // The bevel is drawn on an overlay above the card's content rather than
+        // as the card's own box-shadow. Inset shadows paint *beneath* content,
+        // so an edge-to-edge child (an image in a padding={0} card) would cover
+        // the bevel on every side it touched. ::before, not ::after:
+        // SelectableCard paints its press overlay on ::after.
+        position: 'relative',
+        isolation: 'isolate',
+        boxShadow: 'none',
+        // The bevel is the border. Core's default 1px card border would draw a
+        // flat grey ring outside it, which no Win9x panel has.
+        borderStyle: 'none',
+        '::before': {
+          content: '""',
+          position: 'absolute',
+          inset: '0',
+          zIndex: '1',
+          pointerEvents: 'none',
+          // Outer panels are raised, panels nested inside one are etched. A
+          // descendant test such as :is(.astryx-card *) would also match cards
+          // outside the theme scope (a host page's own card wrapping a themed
+          // region), so nesting resolves through the cascade instead: the edge
+          // is read from an inherited custom property, raised when unset.
+          boxShadow: `var(--astryx-theme-windows98-card-edge, ${raised})`,
+        },
         // A card that contains another card is by definition an outer panel.
-        // It pins its own edge to raised and publishes the recessed edge to
-        // everything beneath it, which is what nested cards pick up above.
-        // Must be nested inside a style block: at a target's top level the
-        // compiler parses keys as visual props, not selectors.
+        // It publishes the etched edge to everything beneath it and pins its
+        // own overlay back to raised. The property lives in the theme's own
+        // namespace: themes may not set private (--_*) properties. These must
+        // sit inside a style block: at a target's top level the compiler
+        // parses keys as visual props, not selectors.
         ':has(.astryx-card)': {
+          '--astryx-theme-windows98-card-edge': etched,
+        },
+        ':has(.astryx-card)::before': {
           boxShadow: raised,
-          '--_w98-card-edge': etched,
         },
       },
       'variant:transparent': {
         backgroundColor: 'transparent',
-        boxShadow: 'none',
+        '::before': {
+          boxShadow: 'none',
+        },
       },
     },
 
+    // A disabled edit control keeps its sunken edge and drops to the face
+    // colour with GrayText, unembossed. Astryx's opacity fade is undone so the
+    // surface behind does not show through.
     'text-input': {
       base: {
         borderRadius: '0px',
@@ -326,8 +384,11 @@ export const windows98Theme = defineTheme({
         boxShadow: sunken,
       },
       disabled: {
+        opacity: '1',
         backgroundColor: face,
         color: shadow,
+        // The inner <input> paints from the token, not the wrapper's colour.
+        '--color-text-primary': shadow,
       },
     },
     // The composer's typing surface is transparent by default, so it inherits
@@ -340,8 +401,34 @@ export const windows98Theme = defineTheme({
         backgroundColor: window,
         color: windowText,
         boxShadow: sunken,
-        // Keep the caret and text clear of the 2px bevel.
-        padding: '3px 4px',
+        // The editable text and its placeholder are separate layers, and both
+        // inset themselves by --spacing-1. Padding this element would move only
+        // the text (the placeholder is absolutely positioned), so the inset is
+        // widened through the token instead, matching a text-input's 8px.
+        '--spacing-1': '8px',
+      },
+    },
+    // Period chat clients (WinPopup, IRC, Messenger) show the conversation in a
+    // recessed white text area rather than on the window face.
+    'chat-message-list': {
+      base: {
+        backgroundColor: window,
+        boxShadow: sunken,
+      },
+    },
+    // Without this the sent-message bubble is painted in the face colour and
+    // vanishes into the panel, leaving alignment as the only cue to who spoke.
+    // A Win9x info tip (pale yellow, flat 1px black border) is the period
+    // surface for a short note; the selection colour would read as "selected"
+    // and a recessed field as "editable".
+    'chat-message-bubble': {
+      'sender:user': {
+        backgroundColor: 'var(--astryx-theme-windows98-tooltip)',
+        color: 'var(--astryx-theme-windows98-tooltip-text)',
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: darkShadow,
+        boxShadow: 'none',
       },
     },
     // Same recessed edit field as text-input; without this the control falls
@@ -355,8 +442,10 @@ export const windows98Theme = defineTheme({
         boxShadow: sunken,
       },
       disabled: {
+        opacity: '1',
         backgroundColor: face,
         color: shadow,
+        '--color-text-primary': shadow,
       },
     },
 
@@ -365,6 +454,7 @@ export const windows98Theme = defineTheme({
         borderRadius: '0px',
       },
       disabled: {
+        opacity: '1',
         color: shadow,
       },
     },
@@ -375,6 +465,13 @@ export const windows98Theme = defineTheme({
         backgroundColor: window,
         color: windowText,
         boxShadow: sunken,
+        // This is the <textarea> itself. A disabled TextArea marks it
+        // aria-disabled (and read-only, so it stays focusable) rather than
+        // :disabled, so the shared selector matches either.
+        [isDisabled]: {
+          backgroundColor: face,
+          color: shadow,
+        },
       },
     },
 
@@ -391,7 +488,9 @@ export const windows98Theme = defineTheme({
         color: text,
         boxShadow: raisedSimple,
       },
+      // A disabled combo box is drawn flat in GrayText, like an edit field.
       disabled: {
+        opacity: '1',
         backgroundColor: face,
         color: shadow,
       },
@@ -439,6 +538,35 @@ export const windows98Theme = defineTheme({
       },
     },
 
+    // FieldLabel already turns grey through --color-text-disabled but exposes
+    // no disabled state of its own, so the highlight half of the emboss is set
+    // on the wrapper that does know, and inherited down to the label.
+    'checkbox-input': {
+      base: {
+        ':has(input:is(:disabled,[aria-disabled="true"]))': {
+          textShadow: embossed,
+        },
+      },
+    },
+    'switch-field': {
+      base: {
+        ':has(input:is(:disabled,[aria-disabled="true"]))': {
+          textShadow: embossed,
+        },
+      },
+    },
+    // A stand-alone field label sits beside its control rather than around it.
+    // Radio rows are excluded so one disabled option does not engrave its
+    // group's caption. A disabled RadioList marks each row rather than the
+    // group, so the second selector looks for a group with no enabled rows;
+    // it is written from the field because :has() cannot nest.
+    'field-label': {
+      base: {
+        ':is(:has(~ * > [data-disabled]:not(.astryx-item)), .astryx-field:has(> [role="radiogroup"]):not(:has(> [role="radiogroup"] > :not([aria-disabled="true"]))) > *)':
+          {textShadow: embossed},
+      },
+    },
+
     'checkbox-indicator': {
       base: {
         borderRadius: '0px',
@@ -456,9 +584,14 @@ export const windows98Theme = defineTheme({
         backgroundColor: window,
         color: windowText,
       },
+      // Win9x greys the tick and drops the box to the face colour, at full
+      // strength rather than faded.
       disabled: {
+        opacity: '1',
         backgroundColor: face,
         color: shadow,
+        // The tick paints from this token, so redefining it greys the tick.
+        '--astryx-theme-windows98-window-text': shadow,
       },
     },
     // Astryx fills the box with the accent and paints a white tick. Win9x keeps
@@ -503,8 +636,10 @@ export const windows98Theme = defineTheme({
         backgroundColor: window,
       },
       disabled: {
+        opacity: '1',
         backgroundColor: face,
         color: shadow,
+        '--astryx-theme-windows98-window-text': shadow,
       },
     },
     'radio-indicator-dot': {
@@ -528,6 +663,7 @@ export const windows98Theme = defineTheme({
         backgroundColor: selection,
       },
       disabled: {
+        opacity: '1',
         backgroundColor: face,
       },
     },
@@ -600,7 +736,7 @@ export const windows98Theme = defineTheme({
         // `color` above. Redefining the tokens it consumes reaches it via the
         // cascade instead.
         '--color-text-primary': 'var(--astryx-theme-windows98-title-text)',
-        '--text-heading-2-size': '11px',
+        '--text-heading-2-size': '0.6875rem',
         '--text-heading-2-leading': '1.2',
         '--text-heading-2-weight': 'var(--font-weight-bold)',
         // Close-button box. --spacing-2 also feeds DialogHeader's title
@@ -619,27 +755,32 @@ export const windows98Theme = defineTheme({
       },
     },
 
-    // A menu highlights the row under the pointer; a plain list of Items does
-    // not. Item carries no attribute distinguishing the two and theme targets
-    // cannot use a descendant combinator, so the menu publishes the highlight
-    // downward and Item reads it, defaulting to no highlight outside a menu.
-    'more-menu': {
-      base: {
-        '--_w98-menu-highlight': selection,
-        '--_w98-menu-highlight-text': selectionText,
-      },
-    },
     item: {
       base: {
         borderRadius: '0px',
-        ':hover': {
-          backgroundColor: 'var(--_w98-menu-highlight, transparent)',
-          // Item paints its label and description from these rather than from
-          // `color`, so recolouring the row means setting both.
-          '--_item-label-color':
-            'var(--_w98-menu-highlight-text, var(--color-text-primary))',
-          '--_item-description-color':
-            'var(--_w98-menu-highlight-text, var(--color-text-secondary))',
+        // A menu highlights the row under the pointer; a plain list of Items
+        // does not, and a drop-down row paints its own highlight around the
+        // Item it contains. :is() accepts a descendant selector, so this
+        // matches only Items inside a menu. Item paints its label from the
+        // text tokens rather than `color`, so the row recolours those.
+        ':hover:is(.astryx-dropdown-menu *)': {
+          backgroundColor: selection,
+          '--color-text-primary': selectionText,
+          '--color-text-secondary': selectionText,
+        },
+        // Covers disabled menu items and radio-list rows. Item fades the row
+        // and, separately, the inner span holding its label; both are undone.
+        [isDisabled]: disabledText,
+        [`${isDisabled} span`]: {opacity: '1'},
+      },
+    },
+
+    link: {
+      base: {
+        [isDisabled]: {
+          ...disabledText,
+          // The label is a Text span that paints itself from the accent token.
+          '--color-text-accent': shadow,
         },
       },
     },
@@ -665,7 +806,7 @@ export const windows98Theme = defineTheme({
         backgroundColor: 'var(--astryx-theme-windows98-tooltip)',
         color: 'var(--astryx-theme-windows98-tooltip-text)',
         boxShadow: 'none',
-        fontSize: '11px',
+        fontSize: '0.6875rem',
       },
     },
 

@@ -408,6 +408,19 @@
       ]
     },
     {
+      "package": "@astryxdesign/theme-windows98",
+      "description": "Windows 98-inspired theme with Windows Standard and Slate color schemes.",
+      "releasedWithCore": true,
+      "contributions": [
+        {
+          "kind": "theme",
+          "name": "windows98",
+          "title": "Windows 98",
+          "summary": "Windows 98-inspired theme with Windows Standard and Slate color schemes."
+        }
+      ]
+    },
+    {
       "package": "@astryxdesign/theme-y2k",
       "description": "Hot pinks, lime greens, and Poppins. Bubbly, playful, and unmistakably retro.",
       "releasedWithCore": true,
