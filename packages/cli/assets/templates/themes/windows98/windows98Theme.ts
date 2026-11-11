@@ -147,6 +147,12 @@ const disabledText = {
 };
 const isDisabled = ':is(:disabled,[aria-disabled="true"])';
 
+// Win98 edit controls had no placeholder text. XP's cue banners, the nearest
+// period equivalent, drew it in GrayText, which in both schemes is the shadow
+// colour. Placeholders read --color-text-secondary, so edit controls redefine
+// it; descriptive text elsewhere stays black.
+const placeholder = shadow;
+
 export const windows98Theme = defineTheme({
   name: 'windows98',
   localTokens,
@@ -382,6 +388,7 @@ export const windows98Theme = defineTheme({
         backgroundColor: window,
         color: windowText,
         boxShadow: sunken,
+        '--color-text-secondary': placeholder,
       },
       disabled: {
         opacity: '1',
@@ -401,6 +408,7 @@ export const windows98Theme = defineTheme({
         backgroundColor: window,
         color: windowText,
         boxShadow: sunken,
+        '--color-text-secondary': placeholder,
         // The editable text and its placeholder are separate layers, and both
         // inset themselves by --spacing-1. Padding this element would move only
         // the text (the placeholder is absolutely positioned), so the inset is
@@ -440,6 +448,7 @@ export const windows98Theme = defineTheme({
         backgroundColor: window,
         color: windowText,
         boxShadow: sunken,
+        '--color-text-secondary': placeholder,
       },
       disabled: {
         opacity: '1',
@@ -465,6 +474,7 @@ export const windows98Theme = defineTheme({
         backgroundColor: window,
         color: windowText,
         boxShadow: sunken,
+        '--color-text-secondary': placeholder,
         // This is the <textarea> itself. A disabled TextArea marks it
         // aria-disabled (and read-only, so it stays focusable) rather than
         // :disabled, so the shared selector matches either.
@@ -482,6 +492,7 @@ export const windows98Theme = defineTheme({
         backgroundColor: window,
         color: windowText,
         boxShadow: sunken,
+        '--color-text-secondary': placeholder,
       },
       'variant:ghost': {
         backgroundColor: face,
