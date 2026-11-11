@@ -29,3 +29,13 @@ Both engines gave identical results:
 | auto, script moves focus at `beforetoggle` | the script's element |
 | `<dialog>` `showModal()`, Escape or `close()` | opener, with ring |
 | `<dialog>`, opener removed, `close()` | body |
+
+## WebKit 26.5 results (macOS, Playwright WebKit)
+
+`drive.mjs`: all 9 checks pass.
+
+`nativeprobe.mjs` matches Chromium and Firefox in every row but one:
+
+| Case | Chromium, Firefox | WebKit |
+| --- | --- | --- |
+| auto, pointer click inside, then `hidePopover()` | opener, with ring | body (WebKit does not focus a button on click, so the click blurs focus and there is nothing to restore) |
