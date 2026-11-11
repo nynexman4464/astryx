@@ -318,6 +318,17 @@ export const windows98Theme = defineTheme({
         // variant so it outranks the flat ghost bevel above.
         ':has(.astryx-dialog-header-close-icon)': {
           boxShadow: raisedButton,
+          // A Win98 caption button is 16x14, wider than tall, and sits 2px in
+          // from the caption's top, bottom and right edges.
+          width: '16px',
+          minWidth: '16px',
+          height: '14px',
+          minHeight: '14px',
+          padding: '0',
+          marginInlineEnd: '2px',
+          // DialogHeader top-aligns the button 1px below the caption's edge;
+          // one more centres it, 2px above and below as in the original.
+          marginBlockStart: '1px',
         },
         [isDisabled]: disabledText,
       },
@@ -758,11 +769,13 @@ export const windows98Theme = defineTheme({
         '--spacing-2': '2px',
       },
     },
+    // Full size: the cross is laid out on the icon's 16-unit grid, so it
+    // renders at its native 8x7 only at 16px.
     'dialog-header-close-icon': {
       base: {
-        width: '10px',
-        height: '10px',
-        fontSize: '10px',
+        width: '16px',
+        height: '16px',
+        fontSize: '16px',
       },
     },
 

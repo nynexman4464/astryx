@@ -42,9 +42,16 @@ function Glyph({children}: {children: ReactNode}) {
 const statusCircle = <circle cx="8" cy="8" r="6.25" {...stroke} />;
 
 export const windows98IconRegistry: IconRegistry = {
+  // The caption-button cross: 8x7 with 2px strokes, as Win98 draws it. Laid
+  // out in whole pixels and drawn with crisp edges so it stays sharp even
+  // when the dialog sits at a fractional position. Rows 4-10 of the grid put
+  // it 3px from the top of a 14px caption button, as in the original.
   close: (
     <Glyph>
-      <path d="M4.5 4.5l7 7M11.5 4.5l-7 7" {...stroke} strokeWidth={2} />
+      <path
+        d="M4 4h2v1h-2zM10 4h2v1h-2zM5 5h2v1h-2zM9 5h2v1h-2zM6 6h4v1h-4zM7 7h2v1h-2zM6 8h4v1h-4zM5 9h2v1h-2zM9 9h2v1h-2zM4 10h2v1h-2zM10 10h2v1h-2z"
+        shapeRendering="crispEdges"
+      />
     </Glyph>
   ),
   chevronDown: (
