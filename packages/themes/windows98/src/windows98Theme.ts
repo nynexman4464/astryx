@@ -4,7 +4,7 @@
  * Windows 98 Theme
  *
  * Light mode: Windows 98 "Windows Standard" appearance.
- * Dark mode: Windows 9x "Slate" appearance scheme.
+ * Dark mode: Windows 98 "Rainy Day" appearance scheme.
  *
  * The theme intentionally prioritizes period UI fidelity over modern visual
  * conventions: square corners, dense controls, 3D bevels, dotted focus
@@ -18,48 +18,50 @@ import {
 } from '@astryxdesign/core/theme';
 import {windows98IconRegistry} from './icons';
 
+// Code sits on a white edit field in both schemes, so both use the same
+// period colours; the dark scheme's palette would vanish against white.
 const win98Syntax = defineSyntaxTheme({
   name: 'astryx-windows98',
   tokens: {
-    keyword: ['#000080', '#558097'],
-    string: ['#008000', '#CEDCE3'],
-    comment: ['#808080', '#CEDCE3'],
-    number: ['#800000', '#FFFFFF'],
-    function: ['#000080', '#FFFFFF'],
-    type: ['#800080', '#CEDCE3'],
-    variable: ['#000000', '#000000'],
-    operator: ['#000000', '#000000'],
-    constant: ['#800000', '#FFFFFF'],
-    tag: ['#000080', '#FFFFFF'],
-    attribute: ['#800000', '#CEDCE3'],
-    property: ['#008080', '#FFFFFF'],
-    punctuation: ['#000000', '#000000'],
-    background: ['#FFFFFF', '#FFFFFF'],
+    keyword: '#000080',
+    string: '#008000',
+    comment: '#808080',
+    number: '#800000',
+    function: '#000080',
+    type: '#800080',
+    variable: '#000000',
+    operator: '#000000',
+    constant: '#800000',
+    tag: '#000080',
+    attribute: '#800000',
+    property: '#008080',
+    punctuation: '#000000',
+    background: '#FFFFFF',
   },
 });
 
 const localTokens: Record<string, TokenValue> = {
-  // Win32 system-colour roles.  Each tuple is [Windows Standard, Slate].
-  '--astryx-theme-windows98-desktop': ['#008080', '#414141'],
-  '--astryx-theme-windows98-face': ['#C0C0C0', '#9DB9C8'],
+  // Win32 system-colour roles.  Each tuple is [Windows Standard, Rainy Day].
+  '--astryx-theme-windows98-desktop': ['#008080', '#000000'],
+  '--astryx-theme-windows98-face': ['#C0C0C0', '#8098B0'],
   '--astryx-theme-windows98-text': ['#000000', '#000000'],
-  '--astryx-theme-windows98-highlight': ['#FFFFFF', '#CEDCE3'],
-  // Slate sets 3DLight to the face colour rather than a distinct tint, so its
-  // raised edges show a single light line where Windows Standard shows two.
-  '--astryx-theme-windows98-light': ['#DFDFDF', '#9DB9C8'],
-  '--astryx-theme-windows98-shadow': ['#808080', '#558097'],
+  '--astryx-theme-windows98-highlight': ['#FFFFFF', '#C0CCD8'],
+  // Rainy Day sets 3DLight to the face colour rather than a distinct tint, so
+  // its raised edges show a single light line where Windows Standard shows two.
+  '--astryx-theme-windows98-light': ['#DFDFDF', '#8098B0'],
+  '--astryx-theme-windows98-shadow': ['#808080', '#4E657C'],
   '--astryx-theme-windows98-dark-shadow': ['#000000', '#000000'],
   '--astryx-theme-windows98-window': ['#FFFFFF', '#FFFFFF'],
   '--astryx-theme-windows98-window-text': ['#000000', '#000000'],
-  '--astryx-theme-windows98-selection': ['#000080', '#558097'],
+  '--astryx-theme-windows98-selection': ['#000080', '#506478'],
   '--astryx-theme-windows98-selection-text': ['#FFFFFF', '#FFFFFF'],
-  '--astryx-theme-windows98-active-title': ['#000080', '#558097'],
-  '--astryx-theme-windows98-active-title-end': ['#1084D0', '#558097'],
+  '--astryx-theme-windows98-active-title': ['#000080', '#506480'],
+  '--astryx-theme-windows98-active-title-end': ['#1084D0', '#4E657C'],
   '--astryx-theme-windows98-title-text': ['#FFFFFF', '#FFFFFF'],
   '--astryx-theme-windows98-inactive-title': ['#808080', '#808080'],
   '--astryx-theme-windows98-inactive-title-end': ['#B5B5B5', '#808080'],
-  '--astryx-theme-windows98-inactive-title-text': ['#C0C0C0', '#C0C0C0'],
-  // Slate's InfoWindow is white, not the pale yellow Windows Standard uses.
+  '--astryx-theme-windows98-inactive-title-text': ['#C0C0C0', '#C1CCD9'],
+  // Rainy Day's InfoWindow is white, not the pale yellow Windows Standard uses.
   '--astryx-theme-windows98-tooltip': ['#FFFFE1', '#FFFFFF'],
   '--astryx-theme-windows98-tooltip-text': ['#000000', '#000000'],
 };
@@ -77,8 +79,8 @@ const selectionText = 'var(--astryx-theme-windows98-selection-text)';
 
 // Win9x chrome follows DrawEdge()'s two concentric edges. The ordering matters:
 // on a raised edge the muted 3DLIGHT line sits *outside* the bright 3DHILIGHT
-// one, not the other way round. Slate uses the same geometry with its
-// blue-gray palette.
+// one, not the other way round. Rainy Day uses the same geometry with its
+// blue-grey palette.
 //
 //   EDGE_RAISED  outer: TL 3DLIGHT    BR 3DDKSHADOW
 //                inner: TL 3DHILIGHT  BR 3DSHADOW

@@ -6,6 +6,6 @@ export default {
   name: 'windows98',
   displayName: 'Windows 98',
   description:
-    'Windows 98-inspired theme with Windows Standard and Slate color schemes.',
+    'Windows 98-inspired theme with Windows Standard and Rainy Day color schemes.',
   maintained: false,
 };

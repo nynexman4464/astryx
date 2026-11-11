@@ -1,6 +1,6 @@
 # @astryxdesign/theme-windows98
 
-Windows 98 theme for Astryx: square corners, dense controls, 3D bevels, recessed input fields, dotted keyboard-focus rectangles, and effectively no animation. Light mode is the Windows 98 "Windows Standard" appearance; dark mode is the Windows 9x "Slate" scheme.
+Windows 98 theme for Astryx: square corners, dense controls, 3D bevels, recessed input fields, dotted keyboard-focus rectangles, and effectively no animation. Light mode is the Windows 98 "Windows Standard" appearance; dark mode is the Windows 98 "Rainy Day" scheme.
 
 The theme prioritises period fidelity over modern design-system conventions.
 
@@ -48,9 +48,9 @@ Astryx's light and dark modes map onto the two classic appearance schemes:
 | Astryx mode | Windows scheme   | Desktop   | Face      | Text      |
 | ----------- | ---------------- | --------- | --------- | --------- |
 | Light       | Windows Standard | `#008080` | `#C0C0C0` | `#000000` |
-| Dark        | Slate            | `#414141` | `#9DB9C8` | `#000000` |
+| Dark        | Rainy Day        | `#000000` | `#8098B0` | `#000000` |
 
-**Slate is not a modern dark mode.** It has a dark desktop, but its controls are a light blue-grey with black text, exactly as the original scheme shipped. Treat it as a second light scheme with a dark backdrop rather than an inverted palette.
+**Rainy Day is not a modern dark mode.** It has a black desktop, but its controls are a steel blue-grey with black text, exactly as the original scheme shipped. Its lower-contrast bevels and greyed text are part of the period look. Treat it as a second light scheme with a dark backdrop rather than an inverted palette.
 
 ## Edges
 
