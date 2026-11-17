@@ -36,7 +36,7 @@
   "kind": "CircularProgress",
   "v": "accent",
   "opacity": 1,
-  "fillVsTrack": 11.62,
+  "fillVsTrack": 15.25,
   "fillVsSurface": 17.22
  },
  {
@@ -96,7 +96,7 @@
   "kind": "CircularProgress",
   "v": "accent",
   "opacity": 1,
-  "fillVsTrack": 8.23,
+  "fillVsTrack": 15.25,
   "fillVsSurface": 13.4
  },
  {
@@ -156,7 +156,7 @@
   "kind": "CircularProgress",
   "v": "accent",
   "opacity": 1,
-  "fillVsTrack": 4.19,
+  "fillVsTrack": 4.95,
   "fillVsSurface": 5.39
  },
  {
@@ -216,7 +216,7 @@
   "kind": "CircularProgress",
   "v": "accent",
   "opacity": 1,
-  "fillVsTrack": 2.58,
+  "fillVsTrack": 3.78,
   "fillVsSurface": 3.5
  },
  {
