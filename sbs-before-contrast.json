@@ -1,0 +1,242 @@
+[
+ {
+  "label": "before",
+  "theme": "neutral",
+  "mode": "light",
+  "kind": "ProgressBar",
+  "v": "accent",
+  "opacity": 1,
+  "fillVsTrack": 11.62,
+  "fillVsSurface": 17.22
+ },
+ {
+  "label": "before",
+  "theme": "neutral",
+  "mode": "light",
+  "kind": "ProgressBar",
+  "v": "neutral",
+  "opacity": 1,
+  "fillVsTrack": 2.13,
+  "fillVsSurface": 3.15
+ },
+ {
+  "label": "before",
+  "theme": "neutral",
+  "mode": "light",
+  "kind": "ProgressBar",
+  "v": "disabled",
+  "opacity": 1,
+  "fillVsTrack": 2.13,
+  "fillVsSurface": 3.15
+ },
+ {
+  "label": "before",
+  "theme": "neutral",
+  "mode": "light",
+  "kind": "CircularProgress",
+  "v": "accent",
+  "opacity": 1,
+  "fillVsTrack": 11.62,
+  "fillVsSurface": 17.22
+ },
+ {
+  "label": "before",
+  "theme": "neutral",
+  "mode": "light",
+  "kind": "CircularProgress",
+  "v": "neutral",
+  "opacity": 1,
+  "fillVsTrack": 2.09,
+  "fillVsSurface": 3.15
+ },
+ {
+  "label": "before",
+  "theme": "neutral",
+  "mode": "light",
+  "kind": "CircularProgress",
+  "v": "disabled",
+  "opacity": 1,
+  "fillVsTrack": 2.09,
+  "fillVsSurface": 3.15
+ },
+ {
+  "label": "before",
+  "theme": "neutral",
+  "mode": "dark",
+  "kind": "ProgressBar",
+  "v": "accent",
+  "opacity": 1,
+  "fillVsTrack": 6.92,
+  "fillVsSurface": 13.4
+ },
+ {
+  "label": "before",
+  "theme": "neutral",
+  "mode": "dark",
+  "kind": "ProgressBar",
+  "v": "neutral",
+  "opacity": 1,
+  "fillVsTrack": 1,
+  "fillVsSurface": 1.94
+ },
+ {
+  "label": "before",
+  "theme": "neutral",
+  "mode": "dark",
+  "kind": "ProgressBar",
+  "v": "disabled",
+  "opacity": 1,
+  "fillVsTrack": 1,
+  "fillVsSurface": 1.94
+ },
+ {
+  "label": "before",
+  "theme": "neutral",
+  "mode": "dark",
+  "kind": "CircularProgress",
+  "v": "accent",
+  "opacity": 1,
+  "fillVsTrack": 8.23,
+  "fillVsSurface": 13.4
+ },
+ {
+  "label": "before",
+  "theme": "neutral",
+  "mode": "dark",
+  "kind": "CircularProgress",
+  "v": "neutral",
+  "opacity": 1,
+  "fillVsTrack": 1.2,
+  "fillVsSurface": 1.94
+ },
+ {
+  "label": "before",
+  "theme": "neutral",
+  "mode": "dark",
+  "kind": "CircularProgress",
+  "v": "disabled",
+  "opacity": 1,
+  "fillVsTrack": 1.2,
+  "fillVsSurface": 1.94
+ },
+ {
+  "label": "before",
+  "theme": "default",
+  "mode": "light",
+  "kind": "ProgressBar",
+  "v": "accent",
+  "opacity": 1,
+  "fillVsTrack": 4.95,
+  "fillVsSurface": 5.39
+ },
+ {
+  "label": "before",
+  "theme": "default",
+  "mode": "light",
+  "kind": "ProgressBar",
+  "v": "neutral",
+  "opacity": 1,
+  "fillVsTrack": 2.03,
+  "fillVsSurface": 2.21
+ },
+ {
+  "label": "before",
+  "theme": "default",
+  "mode": "light",
+  "kind": "ProgressBar",
+  "v": "disabled",
+  "opacity": 1,
+  "fillVsTrack": 2.03,
+  "fillVsSurface": 2.21
+ },
+ {
+  "label": "before",
+  "theme": "default",
+  "mode": "light",
+  "kind": "CircularProgress",
+  "v": "accent",
+  "opacity": 1,
+  "fillVsTrack": 4.19,
+  "fillVsSurface": 5.39
+ },
+ {
+  "label": "before",
+  "theme": "default",
+  "mode": "light",
+  "kind": "CircularProgress",
+  "v": "neutral",
+  "opacity": 1,
+  "fillVsTrack": 1.46,
+  "fillVsSurface": 2.21
+ },
+ {
+  "label": "before",
+  "theme": "default",
+  "mode": "light",
+  "kind": "CircularProgress",
+  "v": "disabled",
+  "opacity": 1,
+  "fillVsTrack": 1.46,
+  "fillVsSurface": 2.21
+ },
+ {
+  "label": "before",
+  "theme": "default",
+  "mode": "dark",
+  "kind": "ProgressBar",
+  "v": "accent",
+  "opacity": 1,
+  "fillVsTrack": 3.78,
+  "fillVsSurface": 3.5
+ },
+ {
+  "label": "before",
+  "theme": "default",
+  "mode": "dark",
+  "kind": "ProgressBar",
+  "v": "neutral",
+  "opacity": 1,
+  "fillVsTrack": 3.77,
+  "fillVsSurface": 3.5
+ },
+ {
+  "label": "before",
+  "theme": "default",
+  "mode": "dark",
+  "kind": "ProgressBar",
+  "v": "disabled",
+  "opacity": 1,
+  "fillVsTrack": 3.77,
+  "fillVsSurface": 3.5
+ },
+ {
+  "label": "before",
+  "theme": "default",
+  "mode": "dark",
+  "kind": "CircularProgress",
+  "v": "accent",
+  "opacity": 1,
+  "fillVsTrack": 2.58,
+  "fillVsSurface": 3.5
+ },
+ {
+  "label": "before",
+  "theme": "default",
+  "mode": "dark",
+  "kind": "CircularProgress",
+  "v": "neutral",
+  "opacity": 1,
+  "fillVsTrack": 1.38,
+  "fillVsSurface": 3.5
+ },
+ {
+  "label": "before",
+  "theme": "default",
+  "mode": "dark",
+  "kind": "CircularProgress",
+  "v": "disabled",
+  "opacity": 1,
+  "fillVsTrack": 1.38,
+  "fillVsSurface": 3.5
+ }
+]
