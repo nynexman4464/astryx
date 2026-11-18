@@ -66,7 +66,7 @@
   "kind": "ProgressBar",
   "v": "accent",
   "opacity": 1,
-  "fillVsTrack": 8.23,
+  "fillVsTrack": 6.92,
   "fillVsSurface": 13.4
  },
  {
@@ -76,8 +76,8 @@
   "kind": "ProgressBar",
   "v": "neutral",
   "opacity": 1,
-  "fillVsTrack": 3.47,
-  "fillVsSurface": 5.65
+  "fillVsTrack": 3.98,
+  "fillVsSurface": 7.71
  },
  {
   "label": "after",
@@ -86,8 +86,8 @@
   "kind": "ProgressBar",
   "v": "disabled",
   "opacity": 0.5,
-  "fillVsTrack": 1.97,
-  "fillVsSurface": 2.48
+  "fillVsTrack": 2.21,
+  "fillVsSurface": 3.03
  },
  {
   "label": "after",

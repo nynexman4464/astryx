@@ -170,12 +170,12 @@
   "v": "success",
   "surf": "rgb(255, 255, 255)",
   "track": "rgb(229, 227, 212)",
-  "fill": "rgb(46, 126, 49)",
+  "fill": "rgb(0, 74, 5)",
   "mark": "rgb(255, 255, 255)",
   "markPlacement": "fill",
-  "fillVsTrack": 3.93,
-  "pulseVsTrack": 3.08,
-  "markVsFill": 5.07
+  "fillVsTrack": 8.21,
+  "pulseVsTrack": 5.67,
+  "markVsFill": 10.6
  },
  {
   "mode": "light",
@@ -184,12 +184,12 @@
   "v": "warning",
   "surf": "rgb(255, 255, 255)",
   "track": "rgb(229, 227, 212)",
-  "fill": "rgb(121, 107, 0)",
+  "fill": "rgb(81, 71, 0)",
   "mark": "rgb(255, 255, 255)",
   "markPlacement": "fill",
-  "fillVsTrack": 4.15,
-  "pulseVsTrack": 3.19,
-  "markVsFill": 5.36
+  "fillVsTrack": 7.23,
+  "pulseVsTrack": 4.94,
+  "markVsFill": 9.33
  },
  {
   "mode": "light",
@@ -198,12 +198,12 @@
   "v": "error",
   "surf": "rgb(255, 255, 255)",
   "track": "rgb(229, 227, 212)",
-  "fill": "rgb(200, 68, 34)",
+  "fill": "rgb(130, 27, 0)",
   "mark": "rgb(255, 255, 255)",
   "markPlacement": "fill",
-  "fillVsTrack": 3.78,
-  "pulseVsTrack": 3.11,
-  "markVsFill": 4.88
+  "fillVsTrack": 7.73,
+  "pulseVsTrack": 5.67,
+  "markVsFill": 9.97
  },
  {
   "mode": "light",
@@ -770,12 +770,12 @@
   "v": "success",
   "surf": "rgb(255, 255, 255)",
   "track": "rgb(212, 211, 221)",
-  "fill": "rgb(65, 109, 59)",
+  "fill": "rgb(53, 79, 49)",
   "mark": "rgb(255, 255, 255)",
   "markPlacement": "fill",
-  "fillVsTrack": 4.07,
-  "pulseVsTrack": 3.15,
-  "markVsFill": 6.04
+  "fillVsTrack": 6.12,
+  "pulseVsTrack": 4.34,
+  "markVsFill": 9.07
  },
  {
   "mode": "light",
@@ -784,12 +784,12 @@
   "v": "warning",
   "surf": "rgb(255, 255, 255)",
   "track": "rgb(212, 211, 221)",
-  "fill": "rgb(115, 100, 25)",
+  "fill": "rgb(82, 72, 24)",
   "mark": "rgb(255, 255, 255)",
   "markPlacement": "fill",
-  "fillVsTrack": 3.97,
-  "pulseVsTrack": 3.08,
-  "markVsFill": 5.89
+  "fillVsTrack": 6.16,
+  "pulseVsTrack": 4.37,
+  "markVsFill": 9.13
  },
  {
   "mode": "light",
@@ -798,12 +798,12 @@
   "v": "error",
   "surf": "rgb(255, 255, 255)",
   "track": "rgb(212, 211, 221)",
-  "fill": "rgb(116, 87, 82)",
+  "fill": "rgb(96, 60, 55)",
   "mark": "rgb(255, 255, 255)",
   "markPlacement": "fill",
-  "fillVsTrack": 4.39,
-  "pulseVsTrack": 3.32,
-  "markVsFill": 6.51
+  "fillVsTrack": 6.44,
+  "pulseVsTrack": 4.54,
+  "markVsFill": 9.55
  },
  {
   "mode": "light",
@@ -1055,12 +1055,12 @@
   "kind": "ProgressBar",
   "v": "accent",
   "surf": "rgb(38, 38, 38)",
-  "track": "rgb(71, 71, 71)",
+  "track": "rgb(82, 82, 82)",
   "fill": "rgb(241, 241, 241)",
   "mark": "rgb(17, 17, 17)",
   "markPlacement": "fill",
-  "fillVsTrack": 8.23,
-  "pulseVsTrack": 6.38,
+  "fillVsTrack": 6.92,
+  "pulseVsTrack": 5.46,
   "markVsFill": 16.72
  },
  {
@@ -1069,12 +1069,12 @@
   "kind": "ProgressBar",
   "v": "success",
   "surf": "rgb(38, 38, 38)",
-  "track": "rgb(71, 71, 71)",
+  "track": "rgb(82, 82, 82)",
   "fill": "rgb(144, 202, 144)",
   "mark": "rgb(38, 38, 38)",
   "markPlacement": "fill",
-  "fillVsTrack": 4.88,
-  "pulseVsTrack": 3.95,
+  "fillVsTrack": 4.11,
+  "pulseVsTrack": 3.39,
   "markVsFill": 7.95
  },
  {
@@ -1083,12 +1083,12 @@
   "kind": "ProgressBar",
   "v": "warning",
   "surf": "rgb(38, 38, 38)",
-  "track": "rgb(71, 71, 71)",
+  "track": "rgb(82, 82, 82)",
   "fill": "rgb(238, 196, 72)",
   "mark": "rgb(38, 38, 38)",
   "markPlacement": "fill",
-  "fillVsTrack": 5.59,
-  "pulseVsTrack": 4.46,
+  "fillVsTrack": 4.7,
+  "pulseVsTrack": 3.82,
   "markVsFill": 9.1
  },
  {
@@ -1097,12 +1097,12 @@
   "kind": "ProgressBar",
   "v": "error",
   "surf": "rgb(38, 38, 38)",
-  "track": "rgb(71, 71, 71)",
+  "track": "rgb(82, 82, 82)",
   "fill": "rgb(255, 174, 167)",
   "mark": "rgb(38, 38, 38)",
   "markPlacement": "fill",
-  "fillVsTrack": 5.25,
-  "pulseVsTrack": 4.22,
+  "fillVsTrack": 4.41,
+  "pulseVsTrack": 3.62,
   "markVsFill": 8.55
  },
  {
@@ -1111,13 +1111,13 @@
   "kind": "ProgressBar",
   "v": "neutral",
   "surf": "rgb(38, 38, 38)",
-  "track": "rgb(71, 71, 71)",
-  "fill": "rgb(158, 158, 158)",
+  "track": "rgb(82, 82, 82)",
+  "fill": "rgb(185, 185, 185)",
   "mark": "rgb(38, 38, 38)",
   "markPlacement": "fill",
-  "fillVsTrack": 3.47,
-  "pulseVsTrack": 2.91,
-  "markVsFill": 5.65
+  "fillVsTrack": 3.98,
+  "pulseVsTrack": 3.31,
+  "markVsFill": 7.71
  },
  {
   "mode": "dark",
@@ -1125,13 +1125,13 @@
   "kind": "ProgressBar",
   "v": "disabled",
   "surf": "rgb(38, 38, 38)",
-  "track": "rgb(71, 71, 71)",
-  "fill": "rgb(158, 158, 158)",
+  "track": "rgb(82, 82, 82)",
+  "fill": "rgb(185, 185, 185)",
   "mark": "rgb(38, 38, 38)",
   "markPlacement": "fill",
-  "fillVsTrack": 3.47,
-  "pulseVsTrack": 2.91,
-  "markVsFill": 5.65
+  "fillVsTrack": 3.98,
+  "pulseVsTrack": 3.31,
+  "markVsFill": 7.71
  },
  {
   "mode": "dark",
@@ -1220,12 +1220,12 @@
   "v": "success",
   "surf": "rgb(46, 33, 23)",
   "track": "rgb(114, 85, 56)",
-  "fill": "rgb(168, 212, 166)",
+  "fill": "rgb(131, 188, 130)",
   "mark": "rgb(46, 33, 23)",
   "markPlacement": "fill",
-  "fillVsTrack": 4.11,
-  "pulseVsTrack": 3.39,
-  "markVsFill": 9.39
+  "fillVsTrack": 3.09,
+  "pulseVsTrack": 2.62,
+  "markVsFill": 7.04
  },
  {
   "mode": "dark",
@@ -1234,12 +1234,12 @@
   "v": "warning",
   "surf": "rgb(46, 33, 23)",
   "track": "rgb(114, 85, 56)",
-  "fill": "rgb(223, 206, 101)",
+  "fill": "rgb(205, 190, 89)",
   "mark": "rgb(46, 33, 23)",
   "markPlacement": "fill",
-  "fillVsTrack": 4.28,
-  "pulseVsTrack": 3.53,
-  "markVsFill": 9.77
+  "fillVsTrack": 3.62,
+  "pulseVsTrack": 3.03,
+  "markVsFill": 8.25
  },
  {
   "mode": "dark",
