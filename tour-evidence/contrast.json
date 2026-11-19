@@ -1,0 +1,439 @@
+[
+ {
+  "label": "first-step neutral-light",
+  "surfaceBg": [
+   255,
+   255,
+   255
+  ],
+  "behind": [
+   255,
+   255,
+   255
+  ],
+  "ringColors": [
+   [
+    255,
+    255,
+    255
+   ],
+   [
+    27,
+    27,
+    27
+   ]
+  ],
+  "ringVsGap": 17.22,
+  "ringVsPage": 17.22,
+  "heading": 21,
+  "texts": [
+   [
+    "Changes save to the clou",
+    21
+   ],
+   [
+    "1 of 3",
+    9.29
+   ]
+  ],
+  "buttons": [
+   [
+    "Close tour",
+    21
+   ],
+   [
+    "Skip",
+    21
+   ],
+   [
+    "Next",
+    17.22
+   ]
+  ]
+ },
+ {
+  "label": "last-step neutral-light",
+  "surfaceBg": [
+   255,
+   255,
+   255
+  ],
+  "behind": [
+   255,
+   255,
+   255
+  ],
+  "ringColors": [
+   [
+    255,
+    255,
+    255
+   ],
+   [
+    27,
+    27,
+    27
+   ]
+  ],
+  "ringVsGap": 17.22,
+  "ringVsPage": 17.22,
+  "heading": 21,
+  "texts": [
+   [
+    "Download a copy.",
+    21
+   ],
+   [
+    "3 of 3",
+    9.29
+   ]
+  ],
+  "buttons": [
+   [
+    "Close tour",
+    21
+   ],
+   [
+    "Skip",
+    21
+   ],
+   [
+    "Back",
+    21
+   ],
+   [
+    "Done",
+    17.22
+   ]
+  ]
+ },
+ {
+  "label": "first-step neutral-dark",
+  "surfaceBg": [
+   27,
+   27,
+   27
+  ],
+  "behind": [
+   38,
+   38,
+   38
+  ],
+  "ringColors": [
+   [
+    38,
+    38,
+    38
+   ],
+   [
+    241,
+    241,
+    241
+   ]
+  ],
+  "ringVsGap": 13.4,
+  "ringVsPage": 13.4,
+  "heading": 17.22,
+  "texts": [
+   [
+    "Changes save to the clou",
+    17.22
+   ],
+   [
+    "1 of 3",
+    6.43
+   ]
+  ],
+  "buttons": [
+   [
+    "Close tour",
+    17.22
+   ],
+   [
+    "Skip",
+    17.22
+   ],
+   [
+    "Next",
+    16.72
+   ]
+  ]
+ },
+ {
+  "label": "last-step neutral-dark",
+  "surfaceBg": [
+   27,
+   27,
+   27
+  ],
+  "behind": [
+   38,
+   38,
+   38
+  ],
+  "ringColors": [
+   [
+    38,
+    38,
+    38
+   ],
+   [
+    241,
+    241,
+    241
+   ]
+  ],
+  "ringVsGap": 13.4,
+  "ringVsPage": 13.4,
+  "heading": 17.22,
+  "texts": [
+   [
+    "Download a copy.",
+    17.22
+   ],
+   [
+    "3 of 3",
+    6.43
+   ]
+  ],
+  "buttons": [
+   [
+    "Close tour",
+    17.22
+   ],
+   [
+    "Skip",
+    17.22
+   ],
+   [
+    "Back",
+    17.22
+   ],
+   [
+    "Done",
+    16.72
+   ]
+  ]
+ },
+ {
+  "label": "first-step stone-light",
+  "surfaceBg": [
+   255,
+   255,
+   255
+  ],
+  "behind": [
+   255,
+   255,
+   255
+  ],
+  "ringColors": [
+   [
+    255,
+    255,
+    255
+   ],
+   [
+    37,
+    37,
+    42
+   ]
+  ],
+  "ringVsGap": 15.25,
+  "ringVsPage": 15.25,
+  "heading": 15.25,
+  "texts": [
+   [
+    "Changes save to the clou",
+    15.25
+   ],
+   [
+    "1 of 3",
+    6.35
+   ]
+  ],
+  "buttons": [
+   [
+    "Close tour",
+    15.25
+   ],
+   [
+    "Skip",
+    15.25
+   ],
+   [
+    "Next",
+    15.25
+   ]
+  ]
+ },
+ {
+  "label": "last-step stone-light",
+  "surfaceBg": [
+   255,
+   255,
+   255
+  ],
+  "behind": [
+   255,
+   255,
+   255
+  ],
+  "ringColors": [
+   [
+    255,
+    255,
+    255
+   ],
+   [
+    37,
+    37,
+    42
+   ]
+  ],
+  "ringVsGap": 15.25,
+  "ringVsPage": 15.25,
+  "heading": 15.25,
+  "texts": [
+   [
+    "Download a copy.",
+    15.25
+   ],
+   [
+    "3 of 3",
+    6.35
+   ]
+  ],
+  "buttons": [
+   [
+    "Close tour",
+    15.25
+   ],
+   [
+    "Skip",
+    15.25
+   ],
+   [
+    "Back",
+    15.25
+   ],
+   [
+    "Done",
+    15.25
+   ]
+  ]
+ },
+ {
+  "label": "first-step stone-dark",
+  "surfaceBg": [
+   48,
+   47,
+   54
+  ],
+  "behind": [
+   27,
+   27,
+   33
+  ],
+  "ringColors": [
+   [
+    27,
+    27,
+    33
+   ],
+   [
+    240,
+    240,
+    249
+   ]
+  ],
+  "ringVsGap": 15.13,
+  "ringVsPage": 15.13,
+  "heading": 11.69,
+  "texts": [
+   [
+    "Changes save to the clou",
+    11.69
+   ],
+   [
+    "1 of 3",
+    5.81
+   ]
+  ],
+  "buttons": [
+   [
+    "Close tour",
+    11.69
+   ],
+   [
+    "Skip",
+    11.69
+   ],
+   [
+    "Next",
+    13.46
+   ]
+  ]
+ },
+ {
+  "label": "last-step stone-dark",
+  "surfaceBg": [
+   48,
+   47,
+   54
+  ],
+  "behind": [
+   27,
+   27,
+   33
+  ],
+  "ringColors": [
+   [
+    27,
+    27,
+    33
+   ],
+   [
+    240,
+    240,
+    249
+   ]
+  ],
+  "ringVsGap": 15.13,
+  "ringVsPage": 15.13,
+  "heading": 11.69,
+  "texts": [
+   [
+    "Download a copy.",
+    11.69
+   ],
+   [
+    "3 of 3",
+    5.81
+   ]
+  ],
+  "buttons": [
+   [
+    "Close tour",
+    11.69
+   ],
+   [
+    "Skip",
+    11.69
+   ],
+   [
+    "Back",
+    11.69
+   ],
+   [
+    "Done",
+    13.46
+   ]
+  ]
+ },
+ {
+  "label": "touch: Next by tap moves the step",
+  "ok": true,
+  "name": true
+ }
+]
