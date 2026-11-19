@@ -1,0 +1,2020 @@
+[
+ {
+  "frame": "first-step__neutral-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Save your work",
+   "ariaModal": null,
+   "backdrop": null
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    109,
+    60,
+    193,
+    116
+   ],
+   "ring": [
+    105,
+    12,
+    63,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "middle-step__neutral-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Share it"
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Share it",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Share it",
+   "callout": [
+    172,
+    60,
+    239,
+    116
+   ],
+   "ring": [
+    168,
+    12,
+    68,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "last-step__neutral-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Export"
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Export",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Export",
+   "callout": [
+    240,
+    60,
+    241,
+    116
+   ],
+   "ring": [
+    236,
+    12,
+    74,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "focus-visible__neutral-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Export",
+   "focus": "Close tour"
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Export",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Close tour",
+   "callout": [
+    240,
+    60,
+    241,
+    116
+   ],
+   "ring": [
+    236,
+    12,
+    74,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "backdrop__neutral-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Save your work",
+   "ariaModal": "true",
+   "backdrop": "backdrop"
+  },
+  "sensed": {
+   "story": "core-tour--with-backdrop",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work",
+   "ariaModal": "true",
+   "ariaBusy": null,
+   "backdrop": "backdrop",
+   "focus": "Save your work",
+   "callout": [
+    109,
+    60,
+    193,
+    116
+   ],
+   "ring": [
+    105,
+    12,
+    63,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "centered__neutral-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Welcome",
+   "ring": null
+  },
+  "sensed": {
+   "story": "core-tour--centered-step",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Welcome",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    325,
+    202,
+    250,
+    116
+   ],
+   "ring": null,
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "long-text__neutral-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "horizontalScroll": false
+  },
+  "sensed": {
+   "story": "core-tour--long-text",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work to the cloud and to this device at the same time",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    109,
+    60,
+    320,
+    252
+   ],
+   "ring": [
+    105,
+    12,
+    63,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "first-step__neutral-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Save your work",
+   "ariaModal": null,
+   "backdrop": null
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:neutral;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    109,
+    60,
+    193,
+    116
+   ],
+   "ring": [
+    105,
+    12,
+    63,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "middle-step__neutral-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Share it"
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:neutral;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Share it",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Share it",
+   "callout": [
+    172,
+    60,
+    239,
+    116
+   ],
+   "ring": [
+    168,
+    12,
+    68,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "last-step__neutral-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Export"
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:neutral;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Export",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Export",
+   "callout": [
+    240,
+    60,
+    241,
+    116
+   ],
+   "ring": [
+    236,
+    12,
+    74,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "focus-visible__neutral-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Export",
+   "focus": "Close tour"
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:neutral;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Export",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Close tour",
+   "callout": [
+    240,
+    60,
+    241,
+    116
+   ],
+   "ring": [
+    236,
+    12,
+    74,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "backdrop__neutral-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Save your work",
+   "ariaModal": "true",
+   "backdrop": "backdrop"
+  },
+  "sensed": {
+   "story": "core-tour--with-backdrop",
+   "globals": "astryxTheme:neutral;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work",
+   "ariaModal": "true",
+   "ariaBusy": null,
+   "backdrop": "backdrop",
+   "focus": "Save your work",
+   "callout": [
+    109,
+    60,
+    193,
+    116
+   ],
+   "ring": [
+    105,
+    12,
+    63,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "centered__neutral-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Welcome",
+   "ring": null
+  },
+  "sensed": {
+   "story": "core-tour--centered-step",
+   "globals": "astryxTheme:neutral;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Welcome",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    325,
+    202,
+    250,
+    116
+   ],
+   "ring": null,
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "long-text__neutral-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "horizontalScroll": false
+  },
+  "sensed": {
+   "story": "core-tour--long-text",
+   "globals": "astryxTheme:neutral;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work to the cloud and to this device at the same time",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    109,
+    60,
+    320,
+    252
+   ],
+   "ring": [
+    105,
+    12,
+    63,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "first-step__stone-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Save your work",
+   "ariaModal": null,
+   "backdrop": null
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:stone;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    109,
+    60,
+    193,
+    116
+   ],
+   "ring": [
+    105,
+    12,
+    65,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "middle-step__stone-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Share it"
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:stone;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Share it",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Share it",
+   "callout": [
+    174,
+    60,
+    239,
+    116
+   ],
+   "ring": [
+    170,
+    12,
+    70,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "last-step__stone-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Export"
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:stone;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Export",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Export",
+   "callout": [
+    244,
+    60,
+    241,
+    116
+   ],
+   "ring": [
+    240,
+    12,
+    76,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "focus-visible__stone-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Export",
+   "focus": "Close tour"
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:stone;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Export",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Close tour",
+   "callout": [
+    244,
+    60,
+    241,
+    116
+   ],
+   "ring": [
+    240,
+    12,
+    76,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "backdrop__stone-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Save your work",
+   "ariaModal": "true",
+   "backdrop": "backdrop"
+  },
+  "sensed": {
+   "story": "core-tour--with-backdrop",
+   "globals": "astryxTheme:stone;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work",
+   "ariaModal": "true",
+   "ariaBusy": null,
+   "backdrop": "backdrop",
+   "focus": "Save your work",
+   "callout": [
+    109,
+    60,
+    193,
+    116
+   ],
+   "ring": [
+    105,
+    12,
+    65,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "centered__stone-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Welcome",
+   "ring": null
+  },
+  "sensed": {
+   "story": "core-tour--centered-step",
+   "globals": "astryxTheme:stone;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Welcome",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    325,
+    202,
+    250,
+    116
+   ],
+   "ring": null,
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "long-text__stone-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "horizontalScroll": false
+  },
+  "sensed": {
+   "story": "core-tour--long-text",
+   "globals": "astryxTheme:stone;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work to the cloud and to this device at the same time",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    109,
+    60,
+    320,
+    249
+   ],
+   "ring": [
+    105,
+    12,
+    65,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "first-step__stone-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Save your work",
+   "ariaModal": null,
+   "backdrop": null
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:stone;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    109,
+    60,
+    193,
+    116
+   ],
+   "ring": [
+    105,
+    12,
+    65,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "middle-step__stone-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Share it"
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:stone;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Share it",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Share it",
+   "callout": [
+    174,
+    60,
+    239,
+    116
+   ],
+   "ring": [
+    170,
+    12,
+    70,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "last-step__stone-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Export"
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:stone;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Export",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Export",
+   "callout": [
+    244,
+    60,
+    241,
+    116
+   ],
+   "ring": [
+    240,
+    12,
+    76,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "focus-visible__stone-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Export",
+   "focus": "Close tour"
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:stone;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Export",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Close tour",
+   "callout": [
+    244,
+    60,
+    241,
+    116
+   ],
+   "ring": [
+    240,
+    12,
+    76,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "backdrop__stone-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Save your work",
+   "ariaModal": "true",
+   "backdrop": "backdrop"
+  },
+  "sensed": {
+   "story": "core-tour--with-backdrop",
+   "globals": "astryxTheme:stone;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work",
+   "ariaModal": "true",
+   "ariaBusy": null,
+   "backdrop": "backdrop",
+   "focus": "Save your work",
+   "callout": [
+    109,
+    60,
+    193,
+    116
+   ],
+   "ring": [
+    105,
+    12,
+    65,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "centered__stone-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dialogName": "Welcome",
+   "ring": null
+  },
+  "sensed": {
+   "story": "core-tour--centered-step",
+   "globals": "astryxTheme:stone;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Welcome",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    325,
+    202,
+    250,
+    116
+   ],
+   "ring": null,
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "long-text__stone-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "horizontalScroll": false
+  },
+  "sensed": {
+   "story": "core-tour--long-text",
+   "globals": "astryxTheme:stone;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work to the cloud and to this device at the same time",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    109,
+    60,
+    320,
+    249
+   ],
+   "ring": [
+    105,
+    12,
+    65,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "custom-theme__violet-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "dialogName": "Save your work"
+  },
+  "sensed": {
+   "story": "core-tour--scoped-theme",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Save your work",
+   "callout": [
+    109,
+    60,
+    193,
+    116
+   ],
+   "ring": [
+    105,
+    12,
+    63,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "rtl__neutral-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "direction": "rtl",
+   "dialogName": "Save your work"
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:rtl",
+   "colorScheme": "light",
+   "direction": "rtl",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    598,
+    60,
+    193,
+    116
+   ],
+   "ring": [
+    732,
+    12,
+    63,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "in-dialog__inside-layers.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "dialogName": "Apply your changes"
+  },
+  "sensed": {
+   "story": "core-tour--inside-layers",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Apply your changes",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Settings",
+   "callout": [
+    266,
+    304,
+    219,
+    116
+   ],
+   "ring": [
+    262,
+    256,
+    69,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "in-popover__inside-layers.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "dialogName": "Filter the list"
+  },
+  "sensed": {
+   "story": "core-tour--inside-layers",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Filter the list",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Status",
+   "callout": [
+    242,
+    108,
+    220,
+    116
+   ],
+   "ring": [
+    238,
+    60,
+    73,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "in-dialog__inside-layers-with-backdrop.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "dialogName": "Apply your changes"
+  },
+  "sensed": {
+   "story": "core-tour--inside-layers-with-backdrop",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Apply your changes",
+   "ariaModal": "true",
+   "ariaBusy": null,
+   "backdrop": "backdrop",
+   "focus": "Apply your changes",
+   "callout": [
+    266,
+    304,
+    219,
+    116
+   ],
+   "ring": [
+    262,
+    256,
+    69,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "in-popover__inside-layers-with-backdrop.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "dialogName": "Filter the list"
+  },
+  "sensed": {
+   "story": "core-tour--inside-layers-with-backdrop",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Filter the list",
+   "ariaModal": "true",
+   "ariaBusy": null,
+   "backdrop": "backdrop",
+   "focus": "Filter the list",
+   "callout": [
+    242,
+    108,
+    220,
+    116
+   ],
+   "ring": [
+    238,
+    60,
+    73,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "narrow-touch-narrow-container__neutral-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "viewport": [
+    320,
+    640
+   ],
+   "coarsePointer": true,
+   "horizontalScroll": false,
+   "colorScheme": "light",
+   "dialogName": "Save your work to the cloud and to this device at the same time"
+  },
+  "sensed": {
+   "story": "core-tour--narrow-container",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    320,
+    640
+   ],
+   "dpr": 1,
+   "coarsePointer": true,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work to the cloud and to this device at the same time",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    118,
+    60,
+    186,
+    408
+   ],
+   "ring": [
+    114,
+    12,
+    67,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "narrow-touch-narrow-container-step-2__neutral-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "viewport": [
+    320,
+    640
+   ],
+   "coarsePointer": true,
+   "horizontalScroll": false,
+   "dialogName": "Share it"
+  },
+  "sensed": {
+   "story": "core-tour--narrow-container",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    320,
+    640
+   ],
+   "dpr": 1,
+   "coarsePointer": true,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Share it",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Share it",
+   "callout": [
+    185,
+    60,
+    119,
+    244
+   ],
+   "ring": [
+    181,
+    12,
+    73,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "narrow-touch-narrow-container__neutral-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "viewport": [
+    320,
+    640
+   ],
+   "coarsePointer": true,
+   "horizontalScroll": false,
+   "colorScheme": "dark",
+   "dialogName": "Save your work to the cloud and to this device at the same time"
+  },
+  "sensed": {
+   "story": "core-tour--narrow-container",
+   "globals": "astryxTheme:neutral;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    320,
+    640
+   ],
+   "dpr": 1,
+   "coarsePointer": true,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work to the cloud and to this device at the same time",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    118,
+    60,
+    186,
+    408
+   ],
+   "ring": [
+    114,
+    12,
+    67,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "narrow-touch-with-backdrop__neutral-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "viewport": [
+    320,
+    640
+   ],
+   "coarsePointer": true,
+   "horizontalScroll": false,
+   "colorScheme": "light",
+   "dialogName": "Save your work"
+  },
+  "sensed": {
+   "story": "core-tour--with-backdrop",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    320,
+    640
+   ],
+   "dpr": 1,
+   "coarsePointer": true,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work",
+   "ariaModal": "true",
+   "ariaBusy": null,
+   "backdrop": "backdrop",
+   "focus": "Save your work",
+   "callout": [
+    118,
+    60,
+    186,
+    144
+   ],
+   "ring": [
+    114,
+    12,
+    67,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "narrow-touch-with-backdrop__neutral-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "viewport": [
+    320,
+    640
+   ],
+   "coarsePointer": true,
+   "horizontalScroll": false,
+   "colorScheme": "dark",
+   "dialogName": "Save your work"
+  },
+  "sensed": {
+   "story": "core-tour--with-backdrop",
+   "globals": "astryxTheme:neutral;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    320,
+    640
+   ],
+   "dpr": 1,
+   "coarsePointer": true,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Save your work",
+   "ariaModal": "true",
+   "ariaBusy": null,
+   "backdrop": "backdrop",
+   "focus": "Save your work",
+   "callout": [
+    118,
+    60,
+    186,
+    144
+   ],
+   "ring": [
+    114,
+    12,
+    67,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "narrow-touch-centered-step__neutral-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "viewport": [
+    320,
+    640
+   ],
+   "coarsePointer": true,
+   "horizontalScroll": false,
+   "colorScheme": "light",
+   "dialogName": "Welcome"
+  },
+  "sensed": {
+   "story": "core-tour--centered-step",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light",
+   "direction": "ltr",
+   "viewport": [
+    320,
+    640
+   ],
+   "dpr": 1,
+   "coarsePointer": true,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Welcome",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    19,
+    260,
+    283,
+    120
+   ],
+   "ring": null,
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "narrow-touch-centered-step__neutral-dark.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "viewport": [
+    320,
+    640
+   ],
+   "coarsePointer": true,
+   "horizontalScroll": false,
+   "colorScheme": "dark",
+   "dialogName": "Welcome"
+  },
+  "sensed": {
+   "story": "core-tour--centered-step",
+   "globals": "astryxTheme:neutral;colorMode:dark;direction:ltr",
+   "colorScheme": "dark",
+   "direction": "ltr",
+   "viewport": [
+    320,
+    640
+   ],
+   "dpr": 1,
+   "coarsePointer": true,
+   "forcedColors": false,
+   "reducedMotion": false,
+   "dialogName": "Welcome",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    19,
+    260,
+    283,
+    120
+   ],
+   "ring": null,
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ },
+ {
+  "frame": "forced-colors__neutral-light.png",
+  "build": "8b9d759410d54215c09670b519e61c2fd9d768d1",
+  "expected": {
+   "forcedColors": true,
+   "dialogName": "Save your work"
+  },
+  "sensed": {
+   "story": "core-tour--default",
+   "globals": "astryxTheme:neutral;colorMode:light;direction:ltr",
+   "colorScheme": "light dark",
+   "direction": "ltr",
+   "viewport": [
+    900,
+    520
+   ],
+   "dpr": 1,
+   "coarsePointer": false,
+   "forcedColors": true,
+   "reducedMotion": false,
+   "dialogName": "Save your work",
+   "ariaModal": null,
+   "ariaBusy": null,
+   "backdrop": null,
+   "focus": "Start tour",
+   "callout": [
+    111,
+    60,
+    195,
+    118
+   ],
+   "ring": [
+    107,
+    12,
+    65,
+    40
+   ],
+   "fontsReady": "loaded",
+   "runningAnimations": 0,
+   "horizontalScroll": false
+  },
+  "captureErrors": [],
+  "pass": true
+ }
+]
