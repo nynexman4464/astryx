@@ -1,7 +1,7 @@
 [
  {
   "frame": "first-step__neutral-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "light",
    "direction": "ltr",
@@ -52,7 +52,7 @@
  },
  {
   "frame": "middle-step__neutral-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "light",
    "direction": "ltr",
@@ -101,7 +101,7 @@
  },
  {
   "frame": "last-step__neutral-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "light",
    "direction": "ltr",
@@ -150,7 +150,7 @@
  },
  {
   "frame": "focus-visible__neutral-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "light",
    "direction": "ltr",
@@ -200,7 +200,7 @@
  },
  {
   "frame": "backdrop__neutral-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "light",
    "direction": "ltr",
@@ -251,7 +251,7 @@
  },
  {
   "frame": "centered__neutral-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "light",
    "direction": "ltr",
@@ -296,7 +296,7 @@
  },
  {
   "frame": "long-text__neutral-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "light",
    "direction": "ltr",
@@ -345,7 +345,7 @@
  },
  {
   "frame": "first-step__neutral-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "dark",
    "direction": "ltr",
@@ -396,7 +396,7 @@
  },
  {
   "frame": "middle-step__neutral-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "dark",
    "direction": "ltr",
@@ -445,7 +445,7 @@
  },
  {
   "frame": "last-step__neutral-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "dark",
    "direction": "ltr",
@@ -494,7 +494,7 @@
  },
  {
   "frame": "focus-visible__neutral-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "dark",
    "direction": "ltr",
@@ -544,7 +544,7 @@
  },
  {
   "frame": "backdrop__neutral-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "dark",
    "direction": "ltr",
@@ -595,7 +595,7 @@
  },
  {
   "frame": "centered__neutral-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "dark",
    "direction": "ltr",
@@ -640,7 +640,7 @@
  },
  {
   "frame": "long-text__neutral-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "dark",
    "direction": "ltr",
@@ -689,7 +689,7 @@
  },
  {
   "frame": "first-step__stone-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "light",
    "direction": "ltr",
@@ -740,7 +740,7 @@
  },
  {
   "frame": "middle-step__stone-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "light",
    "direction": "ltr",
@@ -789,7 +789,7 @@
  },
  {
   "frame": "last-step__stone-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "light",
    "direction": "ltr",
@@ -838,7 +838,7 @@
  },
  {
   "frame": "focus-visible__stone-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "light",
    "direction": "ltr",
@@ -888,7 +888,7 @@
  },
  {
   "frame": "backdrop__stone-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "light",
    "direction": "ltr",
@@ -939,7 +939,7 @@
  },
  {
   "frame": "centered__stone-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "light",
    "direction": "ltr",
@@ -984,7 +984,7 @@
  },
  {
   "frame": "long-text__stone-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "light",
    "direction": "ltr",
@@ -1033,7 +1033,7 @@
  },
  {
   "frame": "first-step__stone-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "dark",
    "direction": "ltr",
@@ -1084,7 +1084,7 @@
  },
  {
   "frame": "middle-step__stone-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "dark",
    "direction": "ltr",
@@ -1133,7 +1133,7 @@
  },
  {
   "frame": "last-step__stone-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "dark",
    "direction": "ltr",
@@ -1182,7 +1182,7 @@
  },
  {
   "frame": "focus-visible__stone-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "dark",
    "direction": "ltr",
@@ -1232,7 +1232,7 @@
  },
  {
   "frame": "backdrop__stone-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "dark",
    "direction": "ltr",
@@ -1283,7 +1283,7 @@
  },
  {
   "frame": "centered__stone-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "dark",
    "direction": "ltr",
@@ -1328,7 +1328,7 @@
  },
  {
   "frame": "long-text__stone-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "colorScheme": "dark",
    "direction": "ltr",
@@ -1377,7 +1377,7 @@
  },
  {
   "frame": "custom-theme__violet-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "dialogName": "Save your work"
   },
@@ -1420,7 +1420,7 @@
  },
  {
   "frame": "rtl__neutral-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "direction": "rtl",
    "dialogName": "Save your work"
@@ -1464,7 +1464,7 @@
  },
  {
   "frame": "in-dialog__inside-layers.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "dialogName": "Apply your changes"
   },
@@ -1507,7 +1507,7 @@
  },
  {
   "frame": "in-popover__inside-layers.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "dialogName": "Filter the list"
   },
@@ -1550,7 +1550,7 @@
  },
  {
   "frame": "in-dialog__inside-layers-with-backdrop.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "dialogName": "Apply your changes"
   },
@@ -1593,7 +1593,7 @@
  },
  {
   "frame": "in-popover__inside-layers-with-backdrop.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "dialogName": "Filter the list"
   },
@@ -1636,7 +1636,7 @@
  },
  {
   "frame": "narrow-touch-narrow-container__neutral-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "viewport": [
     320,
@@ -1686,7 +1686,7 @@
  },
  {
   "frame": "narrow-touch-narrow-container-step-2__neutral-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "viewport": [
     320,
@@ -1735,7 +1735,7 @@
  },
  {
   "frame": "narrow-touch-narrow-container__neutral-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "viewport": [
     320,
@@ -1785,7 +1785,7 @@
  },
  {
   "frame": "narrow-touch-with-backdrop__neutral-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "viewport": [
     320,
@@ -1835,7 +1835,7 @@
  },
  {
   "frame": "narrow-touch-with-backdrop__neutral-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "viewport": [
     320,
@@ -1885,7 +1885,7 @@
  },
  {
   "frame": "narrow-touch-centered-step__neutral-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "viewport": [
     320,
@@ -1930,7 +1930,7 @@
  },
  {
   "frame": "narrow-touch-centered-step__neutral-dark.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "viewport": [
     320,
@@ -1975,7 +1975,7 @@
  },
  {
   "frame": "forced-colors__neutral-light.png",
-  "build": "40e8d3a9c0dfbfe9dad4fd39ddfa479a03143a72",
+  "build": "b731ef604d4d1dd7d8751d1f87d57ede887f7c07",
   "expected": {
    "forcedColors": true,
    "dialogName": "Save your work"
