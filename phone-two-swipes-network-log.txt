@@ -1,0 +1,33 @@
+
+== after load, no touch (slide 1)
+  request  neutral-watch.webp       w=750   started by parser    13.0 KB
+  request  neutral-headphones.webp  w=750   started by parser    10.5 KB
+  request  neutral-backpack.webp    w=256   started by parser     2.4 KB
+  the reel draws neutral-watch.webp&w=750&q=75      in a 143x208 box, complete=true; that URL was requested 1 time(s)
+  the reel draws neutral-headphones.webp&w=750&q=75 in a 167x216 box, complete=true; that URL was requested 1 time(s)
+  the reel draws neutral-backpack.webp&w=256&q=75   in a 38x38 box, complete=true; that URL was requested 1 time(s)
+
+== after swipe 1 (slide 2)
+  request  matcha-watch.webp        w=750   started by other     11.0 KB
+  request  matcha-headphones.webp   w=750   started by other     13.3 KB
+  request  matcha-tumbler.webp      w=256   started by other      3.7 KB
+  request  y2k-watch.webp           w=750   started by other     16.6 KB
+  request  y2k-headphones.webp      w=750   started by other      8.7 KB
+  request  y2k-backpack.webp        w=256   started by other      2.7 KB
+  request  butter-watch.webp        w=750   started by other     29.4 KB
+  request  butter-backpack.webp     w=750   started by other     24.5 KB
+  request  butter-headphones.webp   w=256   started by other      7.1 KB
+  the reel draws matcha-watch.webp&w=750&q=75       in a 131x106 box, complete=true; that URL was requested 1 time(s)
+  the reel draws matcha-headphones.webp&w=750&q=75  in a 167x122 box, complete=true; that URL was requested 1 time(s)
+  the reel draws matcha-tumbler.webp&w=256&q=75     in a 58x58 box, complete=true; that URL was requested 1 time(s)
+
+== after swipe 2 (slide 3)
+  request  gothic-watch.webp        w=750   started by other     10.2 KB
+  request  gothic-headphones.webp   w=750   started by other      9.9 KB
+  request  gothic-backpack.webp     w=256   started by other      2.5 KB
+  the reel draws butter-watch.webp&w=750&q=75       in a 143x179 box, complete=true; that URL was requested 1 time(s)
+  the reel draws butter-backpack.webp&w=750&q=75    in a 167x194 box, complete=true; that URL was requested 1 time(s)
+  the reel draws butter-headphones.webp&w=256&q=75  in a 38x38 box, complete=true; that URL was requested 1 time(s)
+
+15 requests for 15 photos; photos requested more than once, at any width: none; total 165.3 KB
+PASS: each drawn photo shows a URL that was requested once, and no photo was requested twice
